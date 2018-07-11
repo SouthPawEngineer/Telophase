@@ -1,5 +1,5 @@
 # Telophase Keyboard Firmware
-Firmware for Nordic MCUs used in the Telophase Keyboard, contains precompiled .hex files, as well as sources buildable with the Nordic SDK
+Firmware for Nordic MCUs used in the Telophase Keyboard, contains precompiled .hex files, as well as sources buildable with the Nordic SDK.
 This firmware is a dervivative of reversebias' mitosis firmware.
 https://github.com/reversebias/mitosis
 
