@@ -5,7 +5,7 @@ https://github.com/reversebias/mitosis
 
 These instructions are for flashing hex files to the boards via OpenOCD using an ST-Link programmer. On the Telophase/Meiosis/Helicase/Centromere, there is a 4-pin 2.54mm header that one can program the boards by either soldering a right angle header or using a pogo pin adapter without soldering.
 ## OpenOCD server
-The programming header on the side of the keyboard, VCC (3.3V) is at hte outside edge:
+The programming header on the side of the keyboard, VCC (3.3V) is at the outside edge:
 ```
 SWCLK
 SWDIO
@@ -26,7 +26,7 @@ Otherwise you likely have a loose or wrong wire.
 
 
 ## Manual programming
-From the factory, these chips need to be erased. Now open a new terminal window and run the following commands:
+From the factory, these chips need to be erased. Now open a new terminal window in the folder with your hex files and run the following commands:
 ```
 echo reset halt | telnet localhost 4444
 echo nrf51 mass_erase | telnet localhost 4444
