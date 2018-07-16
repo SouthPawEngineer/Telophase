@@ -3,7 +3,8 @@ Firmware for Nordic MCUs used in the Telophase Keyboard, contains precompiled .h
 This firmware is a dervivative of reversebias' mitosis firmware.
 https://github.com/reversebias/mitosis
 
-These instructions are for flashing hex files to the boards via OpenOCD using an ST-Link programmer. On the Telophase/Meiosis/Helicase/Centromere, there is a 4-pin 2.54mm header that one can program the boards by either soldering a right angle header or using a pogo pin adapter without soldering.
+These instructions are for flashing hex files to the boards via OpenOCD using an ST-Link programmer. Alternatively, one could use NRF Studio Go and a J-Link/J-Link EDU, or the nrfjprog utility.
+On the Telophase/Meiosis/Helicase/Centromere, there is a 4-pin 2.54mm header that one can program the boards by either soldering a right angle header or using a pogo pin adapter without soldering.
 ## OpenOCD server
 The programming header on the side of the keyboard, VCC (3.3V) is at the outside edge:
 ```
