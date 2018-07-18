@@ -1,9 +1,9 @@
 # Telophase Keyboard Firmware
-Firmware for Nordic MCUs used in the Telophase Keyboard, contains precompiled .hex files, as well as sources buildable with the Nordic SDK.
+Firmware for Nordic MCUs used in the Telophase Keyboard, containing the necessary hex files.
 This firmware is a dervivative of reversebias' mitosis firmware.
 https://github.com/reversebias/mitosis
 
-These instructions are for flashing hex files to the boards via OpenOCD using an ST-Link programmer. Alternatively, one could use NRF Studio Go and a J-Link/J-Link EDU, or the nrfjprog utility.
+These instructions are for flashing hex files to the boards via OpenOCD using an ST-Link programmer. This process has been tested on Windows 10 and Linux. Alternatively, one could use NRF Studio Go and a J-Link/J-Link EDU, or the nrfjprog utility.
 On the Telophase/Meiosis/Helicase/Centromere, there is a 4-pin 2.54mm header that one can program the boards by either soldering a right angle header or using a pogo pin adapter without soldering.
 ## OpenOCD server
 The programming header on the side of the keyboard, VCC (3.3V) is at the outside edge:
@@ -38,5 +38,10 @@ echo reset halt | telnet localhost 4444
 echo flash write_image `readlink -f keyboard_left.hex` | telnet localhost 4444
 echo reset | telnet localhost 4444
 ```
-
 An openocd session should be running in another terminal, as this script sends commands to it.
+
+## Programming via scripts
+There are scripts in the hex file directory to flash the boards. Open a terminal window and start OpenOCD as above. Open a second terminal window, and run the appropriate script for your receiver type, or the half of the keyboard you are flashing:
+```
+./program-keyboard-receiver.sh
+```
