@@ -43,5 +43,5 @@ An openocd session should be running in another terminal, as this script sends c
 ## Programming via scripts
 There are scripts in the hex file directory to flash the boards. Open a terminal window and start OpenOCD as above. Open a second terminal window, and run the appropriate script for your receiver type, or the half of the keyboard you are flashing:
 ```
-./program-keyboard-receiver.sh
+./program-receiver.sh
 ```
