@@ -1,6 +1,6 @@
 # Telophase Keyboard Firmware
 Firmware for Nordic MCUs used in the Telophase Keyboard, containing the necessary hex files.
-This firmware is a dervivative of reversebias' mitosis firmware.
+This firmware is a derivative of reversebias' mitosis firmware.
 https://github.com/reversebias/mitosis
 
 These instructions are for flashing hex files to the boards via OpenOCD using an ST-Link programmer. This process has been tested on Windows 10 and Linux. Alternatively, one could use NRF Studio Go and a J-Link/J-Link EDU, or the nrfjprog utility.
