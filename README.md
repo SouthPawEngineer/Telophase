@@ -13,7 +13,7 @@ SWDIO
 GND
 3.3V
 ```
-It's best to remove the battery during long sessions of debugging, as charging non-rechargeable lithium batteries isn't recommended.
+It's best to remove the battery during long sessions of debugging, as connecting non-rechargeable 3V lithium batteries to a potentially higher-voltage source isn't recommended.
 
 Launch a debugging session within a terminal inside of your working directory where the hex files are located:
 ```
