@@ -17,7 +17,7 @@ It's best to remove the battery during long sessions of debugging, as charging n
 
 Launch a debugging session within a terminal inside of your working directory where the hex files are located:
 ```
-openocd -f nrf-stlink.cfg
+openocd -f nrf-stlinkv2.cfg
 ```
 Should give you an output ending in:
 ```
